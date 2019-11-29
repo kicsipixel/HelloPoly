@@ -13,6 +13,7 @@
 		57C7AA02238EB23800A6F4C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57C7AA01238EB23800A6F4C5 /* Assets.xcassets */; };
 		57C7AA05238EB23800A6F4C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57C7AA04238EB23800A6F4C5 /* Preview Assets.xcassets */; };
 		57C7AA08238EB23800A6F4C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57C7AA06238EB23800A6F4C5 /* LaunchScreen.storyboard */; };
+		57C7AA14238EDE5100A6F4C5 /* PolygonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C7AA13238EDE5100A6F4C5 /* PolygonParameters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		57C7AA04238EB23800A6F4C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		57C7AA07238EB23800A6F4C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57C7AA09238EB23800A6F4C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57C7AA13238EDE5100A6F4C5 /* PolygonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonParameters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				57C7A9FB238EB23600A6F4C5 /* AppDelegate.swift */,
 				57C7A9FD238EB23600A6F4C5 /* SceneDelegate.swift */,
 				57C7A9FF238EB23600A6F4C5 /* ContentView.swift */,
+				57C7AA13238EDE5100A6F4C5 /* PolygonParameters.swift */,
 				57C7AA01238EB23800A6F4C5 /* Assets.xcassets */,
 				57C7AA06238EB23800A6F4C5 /* LaunchScreen.storyboard */,
 				57C7AA09238EB23800A6F4C5 /* Info.plist */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57C7A9FC238EB23600A6F4C5 /* AppDelegate.swift in Sources */,
+				57C7AA14238EDE5100A6F4C5 /* PolygonParameters.swift in Sources */,
 				57C7A9FE238EB23600A6F4C5 /* SceneDelegate.swift in Sources */,
 				57C7AA00238EB23600A6F4C5 /* ContentView.swift in Sources */,
 			);
