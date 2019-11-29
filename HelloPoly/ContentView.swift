@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State var numberOfSides: Int = 3
-   
+    @State var filledPolygon: Bool = true
     
     var arrayOfPoint = [Float]()
     
@@ -19,9 +19,12 @@ struct ContentView: View {
         createPoints(numberOfSides: numberOfSides)
         return NavigationView {
             VStack  {
-                Stepper(value: $numberOfSides, in: 3...12, label: { Text("Number of sides: \(numberOfSides)")})
-                    .padding()
-                    .background(Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 1.0))
+                Form {
+                    Stepper(value: $numberOfSides, in: 3...12, label: { Text("Number of sides: \(numberOfSides)")})
+                    Toggle(isOn: $filledPolygon) { Text("Filled")}
+                }
+                    .frame(maxHeight: 124)
+                     .background(Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 1.0))
                     Text("\(Polygons())")
                         .font(.system(size: 28))
                         .padding(.bottom, 10)
@@ -42,7 +45,14 @@ struct ContentView: View {
                                 )
                             )
                         }
+                        path.closeSubpath()
                     }
+                    .fill( LinearGradient(
+                               gradient: Gradient(colors: [.green, .white]),
+                               startPoint: .top,
+                               endPoint: .bottom
+                           ))
+                    .opacity(0.9)
                 }
              .navigationBarTitle(Text("HelloPoly"))
         }
