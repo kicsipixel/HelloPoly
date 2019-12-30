@@ -100,8 +100,8 @@ struct ContentView: View {
         for i in 0...numberOfSides-1 {
             PolygonParameters.points.append(
                 PolygonParameters.Segment(
-                    xFactor:  (CGFloat(120 * sin(Double(i) * 2 * Double.pi / Double(numberOfSides)))),
-                    yFactor:  (CGFloat(120 * cos(Double(i) * 2 * Double.pi / Double(numberOfSides))))
+                    xFactor:  (CGFloat(-120 * sin(Double(i) * 2 * Double.pi / Double(numberOfSides)))),
+                    yFactor:  (CGFloat(-120 * cos(Double(i) * 2 * Double.pi / Double(numberOfSides))))
                 )
             )
         }
